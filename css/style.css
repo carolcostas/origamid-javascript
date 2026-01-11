@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+    font-family: 'IBM Plex Mono', monospace;
+    list-style: none;
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 120px minmax(300px, 800px) 1fr;
+    background: #faf6ed;
+    color: #222;
+    -webkit-font-smoothing: antialiased;
+}
+
+.menu {
+    grid-column: 3/5;
+    background: #Fb5;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu li a {
+    color: #222;
+    display: block;
+    padding: 10px;
+    text-transform: uppercase;
+    margin-right: 10px;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 0.975rem;
+    letter-spacing: .1em;
+}
+
+.grid-section {
+    grid-column: 2/4;
+    display: grid;
+    grid-template-columns: 90px 300px 1fr;
+    width: 100%;
+    padding: 10px;
+    grid-gap: 20px;
+    margin-bottom: 4rem;
+}
+
+.titulo {
+    font-family: "Playfair Display SC", serif;
+    font-weight: 400;
+    font-size: 6rem;
+    grid-column: 1/4;
+    line-height: 1;
+    margin-bottom: 1rem;
+}
+
+.animais h2 {
+    color: #e54;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1.1rem;
+    letter-spacing: .1em;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    font-weight: 600ss;
+}
+
+.animais h2::before {
+    content: '';
+    display: inline-block;
+    width: 40px;
+    height: 10px;
+    margin-right: 10px;
+    background: #Fb5;
+}
+
+.animais p {
+    font-family: 'Helvetica', 'Arial';
+    margin-bottom: 1rem;
+    line-height: 1.2rem;
+
+}
+
+.animais-lista {
+    grid-column: 2;
+    height: 370px;
+    overflow-y: scroll;
+}
+
+.faq-list{
+    grid-column: 2/4;
+}
+
+.faq-list dt::before{
+    content: "";
+    display: inline-block;
+    height: 10px;
+    width: 20px;
+    background: #Fb5;
+    margin-right: 10px;
+}
+
+.faq-list dt{
+    margin-top: 30px;
+    color: #e54;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: bold;
+}
+
+.faq-list dd {
+    font-family: Helvetica, Arial;
+    margin: 10px 0px 10px 30px;
+}
+
+.mapa{
+    grid-column: 2;
+}
+
+.dados li{
+    grid-column: 3;
+    font-family: Helvetica, Arial;
+}
+
+.dados li::before{
+    content: "";
+    display: inline-block;
+    height: 12px;
+    width: 20px;
+    background: #Fb5;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+.copy{
+    grid-column: 3/5;
+    margin-bottom: 2rem;
+    background: #Fb5;
+    padding: 20px;
+    font-weight: b;
+
+}
